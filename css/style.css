@@ -44,7 +44,7 @@ header{
 }
 
 .logo{
-transition:0.3s;
+transition:1.5s;
 }
 
 header.shrink .logo{
@@ -327,5 +327,6 @@ align-items:center;
 .producto{
 width:90%;
 }
+
 
 }
