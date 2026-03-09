@@ -14,8 +14,8 @@
 
     <body>
         <header>
-            <a href="index.html" class="logo">
-                <img src="img\recursos\logo.png" width="200" height="200"> 
+            <a href="index.html">
+                <img class="logo" src="img\recursos\logo.png" width="200" height="200"> 
             </a>
             <nav>
                 <a href="#inicio">Inicio</a>
@@ -114,7 +114,15 @@
                 }
             }
             }
+            window.addEventListener("scroll", function(){
+            const header = document.querySelector("header");
 
+            if(window.scrollY > 50){
+                header.classList.add("shrink");
+            } else {
+                header.classList.remove("shrink");
+            }
+            });
             window.addEventListener("scroll", reveal);
         </script>
     </body>
