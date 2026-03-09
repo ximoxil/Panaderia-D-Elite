@@ -33,7 +33,6 @@ header{
   left:0;
 
   width:100%;
-  padding:10px 20px;
   box-sizing:border-box;
 
   background-image:url("../img/recursos/background.png");
@@ -42,6 +41,15 @@ header{
 
   color:white;
   z-index:1000;
+}
+
+.logo{
+transition:0.3s;
+}
+
+header.shrink .logo{
+opacity:0;
+height:0;
 }
 
 nav{
