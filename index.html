@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <link rel="icon" href="img\recursos\logo.png" sizes="48x48">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Panadería D'Elite</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="script" href="js/script.js">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="logo">
+                <img src="img\recursos\logo.png" width="200" height="200"> 
+            </a>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#ubicacion">Ubicación</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#reseñas">Reseñas</a>
+            </nav>
+        </header>
+
+        <section id="inicio">
+        <h1>Panadería artesanal</h1>
+        <p class="eslogan">
+            Pan fresco todos los días, elaborado con ingredientes de calidad y recetas tradicionales.
+        </p>
+        </section>
+
+        <section id="productos">
+
+            <h1>Nuestros productos</h1>
+
+            <div class="productos-container">
+                <div class="producto">
+                <h2>Pan casero</h2>
+                <img src="img\productos\pan_casero_placeholder.jpg" alt="pan">
+                <img src="img\productos\pan_casero_placeholder_2.jpg" alt="pan">
+                </div>
+                <div class="producto">
+                <h2>Facturas</h2>
+                <img src="img\productos\facturas_placeholder.jpg" alt="facturas">
+                <img src="img\productos\facturas_placeholder_2.jpg" alt="facturas">
+                </div>
+                <div class="producto" id="tortas_tartas">
+                <h2>Tortas y tartas</h2>
+                <img src="img\productos\torta_chocolate_y_frutillas.png" alt="tortas">
+                <img src="img\productos\tarta_conitos_chocolate.png" alt="tartas">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros">
+        <h1 class="sobre-nosotros">Sobre nosotros</h1>
+        <p class="nosotros">En D' Elite Panadería y Confitería horneamos todos los días para que a tu mesa
+            lleguen cosas ricas, frescas y hechas con amor. Somos ese gustito cerca tuyo que acompaña
+            cada momento del día.</p>
+        <p class="horario">Encontranos siempre de lunes a viernes</p>
+        <p class="horario">7:30 am - 8:00 pm</p>
+        <!--Colocar información del local-->
+        </section>
+
+        <section id="ubicacion">
+            <h1 class="donde-estamos">Dónde estamos</h1>
+            <p class="direccion">Av. Las Heras 137 </p>
+            <iframe
+            id="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.688999379304!2d-58.26960032333861!3d-34.713023363280584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e0554a1ac31%3A0x4e49e28c20100b2c!2sD%20Elite%20Panaderia%20y%20Confiteria!5e0!3m2!1ses-419!2sar!4v1772673134485!5m2!1ses-419!2sar"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section id="contacto">
+            <h1 class="contacto">Contacto</h1>
+            <p class="telefono">Teléfono: 11 1234 5678</p>
+            <a href="https://wa.me/5491156672458?text=Hola%20quiero%20consultar%20por%20sus%20productos" class="whatsapp" target="_blank">
+                <img src="img\recursos\whatsapp-white-logo.png" width="45" height="45" >
+                <p class="pedir-whtsp">Pedir por WhatsApp</p>
+            </a>
+            <a href="https://wa.me/5491156672458?text=Hola%20quiero%20consultar%20por%20sus%20productos" class="whatsapp-btn" target="_blank">
+                <img src="img\recursos\whatsapp-white-logo.png" width="65" height="65">
+            </a>
+        </section>
+        <section id="reseñas">
+            <h1 class="reseña">El sabor que enamora, contado por nuestros clientes</h1>
+            <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-84a3c9e3-015d-4007-861f-fdd1e0e4b89c" data-elfsight-app-lazy></div>
+        </section>
+        <footer>
+            <p class="footer-text">© 2026 Panadería D'Elite</p>
+        </footer>
+    </body>
+</html>
