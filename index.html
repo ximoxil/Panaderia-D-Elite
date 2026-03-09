@@ -34,7 +34,7 @@
         </p>
         </section>
 
-        <section id="productos">
+        <section id="productos" class="reveal">
 
             <h1>Nuestros productos</h1>
 
@@ -58,7 +58,7 @@
             </div>
         </section>
 
-        <section id="nosotros">
+        <section id="nosotros" class="reveal">
         <h1 class="sobre-nosotros">Sobre nosotros</h1>
         <p class="nosotros">En D' Elite Panadería y Confitería horneamos todos los días para que a tu mesa
             lleguen cosas ricas, frescas y hechas con amor. Somos ese gustito cerca tuyo que acompaña
@@ -68,7 +68,7 @@
         <!--Colocar información del local-->
         </section>
 
-        <section id="ubicacion">
+        <section id="ubicacion" class="reveal">
             <h1 class="donde-estamos">Dónde estamos</h1>
             <p class="direccion">Av. Las Heras 137 </p>
             <iframe
@@ -83,7 +83,7 @@
             </iframe>
         </section>
 
-        <section id="contacto">
+        <section id="contacto" class="reveal">
             <h1 class="contacto">Contacto</h1>
             <p class="telefono">Teléfono: 11 1234 5678</p>
             <a href="https://wa.me/5491156672458?text=Hola%20quiero%20consultar%20por%20sus%20productos" class="whatsapp" target="_blank">
@@ -91,7 +91,7 @@
                 <p class="pedir-whtsp">Pedir por WhatsApp</p>
             </a>
         </section>
-        <section id="reseñas">
+        <section id="reseñas" class="reveal">
             <h1 class="reseña">El sabor que enamora, contado por nuestros clientes</h1>
             <!-- Elfsight Google Reviews | Untitled Google Reviews -->
             <script src="https://elfsightcdn.com/platform.js" async></script>
@@ -100,5 +100,22 @@
         <footer>
             <p class="footer-text">© 2026 Panadería D'Elite</p>
         </footer>
+        <script>
+            function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+
+                if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+                }
+            }
+            }
+
+            window.addEventListener("scroll", reveal);
+        </script>
     </body>
 </html>
